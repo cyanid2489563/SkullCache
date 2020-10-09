@@ -1,0 +1,7 @@
+name: SkullCache
+version: @version@
+main: team.dungeoncraft.skullcache.SkullCache
+api-version: 1.13
+load: STARTUP
+authors: [ Cyanide ]
+description: 頭顱快取，可降低插件取得頭顱的延遲時間
