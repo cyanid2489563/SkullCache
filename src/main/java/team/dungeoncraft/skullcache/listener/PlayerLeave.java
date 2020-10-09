@@ -1,4 +1,4 @@
-package team.dungeoncraft.skullcache.event;
+package team.dungeoncraft.skullcache.listener;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

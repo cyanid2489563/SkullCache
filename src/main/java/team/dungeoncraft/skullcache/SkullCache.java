@@ -2,7 +2,7 @@ package team.dungeoncraft.skullcache;
 
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
-import team.dungeoncraft.skullcache.event.PlayerJoin;
+import team.dungeoncraft.skullcache.listener.PlayerJoin;
 
 import java.util.HashMap;
 import java.util.Map;
