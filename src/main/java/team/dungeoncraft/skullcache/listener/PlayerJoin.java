@@ -24,7 +24,9 @@ public final class PlayerJoin implements Listener {
     public void onPlayerJoin(PlayerJoinEvent event) {
         UUID playerUUID = event.getPlayer().getUniqueId();
         if (!plugin.isCached(playerUUID)) {
-            plugin.putSkullToCache(playerUUID, getPlayerSkull(playerUUID));
+            Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
+                plugin.putSkullToCache(playerUUID, getPlayerSkull(playerUUID));
+            });
         }
     }
 

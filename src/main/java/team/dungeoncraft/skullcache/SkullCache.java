@@ -4,14 +4,14 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import team.dungeoncraft.skullcache.listener.PlayerJoin;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
 public final class SkullCache extends JavaPlugin {
 
     public static SkullCache plugin;
-    private final Map<UUID, ItemStack> skullCaches = new HashMap<>();
+    private final Map<UUID, ItemStack> skullCaches = new ConcurrentHashMap<>();
 
     @Override
     public void onEnable() {
